@@ -1,16 +1,15 @@
 # GitHub Pagesでの公開
 
-1. `docs/.vitepress/config.mts`に以下の設定を追加します。
+1. `docs/.vitepress/config.mts`に以下の設定を追加します
    ```javascript
  export default defineConfig({
      base: '/<repository-name>/',
    })
    ```
 
-2. ビルドコマンドを実行します。
-   ```bash
-   npx vitepress docs:build
-   ```
+
+2. ビルドを行い静的ファイルを作成します。
+   `npm run docs:build`
    これにより、`.vitepress/dist`ディレクトリにサイトの静的ファイルが生成されます。
 
 3. 生成された静的ファイルをGitHubにプッシュします。
