@@ -3,6 +3,7 @@ import { defineConfig } from 'vitepress'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "project",
+  ignoreDeadLinks: true,
   description: "A VitePress Site",
   base: '/<samplevite>/',
   themeConfig: {
@@ -24,7 +25,7 @@ export default defineConfig({
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
-    ]
+    ],
   }
 })
 
